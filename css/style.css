@@ -1,0 +1,149 @@
+*,
+::before, 
+::after{
+   box-sizing: border-box;
+   top: 0;
+   bottom: 0;
+}
+
+body{
+   font-family: 'Lato', sans-serif;
+   font-weight: 400;
+   font-size: 14px;
+   color: #fff;
+}
+
+.conteiner{
+   max-width: 1125px;
+   padding: 0 10px;
+   margin: 0 auto;
+}
+
+.header{
+   background-image: linear-gradient(90deg, rgba(213, 32, 71, 0.8) 0%, rgba(238, 61, 27, 0.8) 100%), url(../img/bg-images.jpg);
+   background-repeat: no-repeat;
+   background-position: center center;
+   background-size: cover;
+   height: 100vh;
+}
+
+.header-inner{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   height: 100px;
+   padding-top: 17px;
+}
+
+.menu{
+   margin-left: 160px;
+}
+
+.menu__list{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   font-weight: bold;
+   line-height: 17px;
+   text-transform: uppercase;
+}
+
+.menu__list-items{
+   list-style: none;
+}
+
+.menu__list-link{
+   color: #fff;
+   text-decoration: none;
+   padding-right: 20px;
+}
+
+.menu__list-link:hover{
+   color: #473327;
+   transition: 0.4s all ease;
+}
+
+.selection-lang{
+   display: flex;
+   align-items: center;
+   border: none;
+   background: none;
+   outline: none;
+   cursor: pointer;
+}
+
+.selection-lang__images{
+   padding-right: 11px;
+}
+
+.lang{
+   text-transform: uppercase;
+   color: #fff;
+   position: relative;
+}
+
+.lang::after{
+   content:"";
+   position: absolute;
+   border-top: 7px solid #fff;
+   border-right: 7px solid transparent;
+   border-left: 7px solid transparent;
+   right: -20px;
+   top: 50%;
+   transform: translateY(-50%);
+}
+
+.user-enter{
+   display: flex;
+   margin-left: 113px;
+}
+
+.user-enter__login{
+   color: #fff;
+   text-decoration: none;
+   text-transform: uppercase;
+   border: 1px solid #fff;
+   border-radius: 6px;
+   padding: 11px 28px;
+   margin-left: 22px;
+}
+
+.banner{
+   display: flex;
+   justify-content: center;
+   flex-direction: column;
+   align-items: center;
+   margin-top: 140px;
+}
+
+.banner__title{
+   font-weight: bold;
+   font-size: 72px;
+   line-height: 86px;
+   letter-spacing: 0.05em;
+   text-transform: uppercase;
+}
+
+.banner__text{
+   max-width: 540px;
+   font-size: 24px;
+   line-height: 150%;
+   text-align: center;
+   padding: 0 25px;
+   margin-top: 39px;
+}
+
+.btn{
+   border: 1px solid #fff;
+   border-radius: 6px;
+   background: #fff;
+   color:#ED4C5C;
+   text-align: center;
+   line-height: 17px;
+   text-transform: uppercase;
+   text-decoration: none; 
+   padding: 17px 53px;
+   margin-top: 39px;
+   margin-bottom: 187px;
+   cursor: pointer;
+}
